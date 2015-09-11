@@ -1,0 +1,27 @@
+base_path: /home/svein/mywiki
+blurb_max: 50
+date_format: '%Y-%m-%d'
+home_page: index
+markdown_exts:
+- codehilite
+- toc
+- pykwiki.ext.tpl
+- pykwiki.ext.post
+postlist:
+  max_pages: 5
+  order_field: mtime
+  order_type: descending
+  per_page: 2
+  post_type: preview
+rss_max_entries: 20
+site:
+  author: Example Author
+  base_url: ''
+  description: Example Site Description
+  keywords: example, pykwiki
+  title: Example Site
+source_ext: .md
+theme: default
+time_format: '%H:%M:%S'
+timestamp_format: '%Y-%m-%d %H:%M'
+web_prefix: ''

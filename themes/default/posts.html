@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block title %}Recent{% endblock %}
+{% block content %}
+<script>
+ 
+function load_postlist_cb(data) { 
+    $('#postlist_wrap').html(data);
+    $('.toc').hide();
+}
+
+function load_postlist(page_num) { 
+    $.get('{{conf.web_prefix}}/postlist-'+page_num+'.html',
+        load_postlist_cb,
+        "html");
+}
+
+$(document).ready(function() { 
+    load_postlist(1);
+});
+
+</script>
+
+<div id="postlist_wrap"></div>
+
+{% endblock %}
