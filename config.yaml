@@ -15,13 +15,13 @@ postlist:
   post_type: preview
 rss_max_entries: 20
 site:
-  author: Example Author
-  base_url: ''
-  description: Example Site Description
+  author: Jules RANDOLPH
+  base_url: 'posts.html'
+  description: My personnal wiki
   keywords: example, pykwiki
-  title: Example Site
+  title: My personnal wiki
 source_ext: .md
-theme: default
+theme:slate
 time_format: '%H:%M:%S'
 timestamp_format: '%Y-%m-%d %H:%M'
 web_prefix: ''
